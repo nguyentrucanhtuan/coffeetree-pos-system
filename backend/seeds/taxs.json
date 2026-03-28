@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Thuế mua hàng 8%",
+        "tax_type": "purchase_tax",
+        "is_active": true
+    },
+    {
+        "id": 2,
+        "name": "Thuế mua hàng 10%",
+        "tax_type": "purchase_tax",
+        "is_active": true
+    },
+    {
+        "id": 3,
+        "name": "Thuế bán hàng 8%",
+        "tax_type": "sales_tax",
+        "is_active": true
+    },
+    {
+        "id": 4,
+        "name": "Thuế bán hàng 10%",
+        "tax_type": "sales_tax",
+        "is_active": true
+    }
+]

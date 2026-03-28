@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Ly", "relative_factor": 1, "is_active": true },
+  { "id": 2, "name": "Cái", "relative_factor": 1, "is_active": true },
+  { "id": 3, "name": "Gói", "relative_factor": 1, "is_active": true },
+  { "id": 4, "name": "Thùng", "relative_factor": 24, "relative_uom_id": 1, "is_active": true }
+]

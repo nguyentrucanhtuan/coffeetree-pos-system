@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Cà phê sữa đá",
+    "sku": "CFSD",
+    "description": "Cà phê pha phin truyền thống với sữa đặc",
+    "price": 29000,
+    "cost_price": 12000,
+    "category_id": 1,
+    "is_active": true,
+    "unit_id": 1,
+    "image": "https://images.unsplash.com/photo-1541167760496-162955ed20c8"
+  },
+  {
+    "name": "Bạc xỉu",
+    "sku": "BX",
+    "description": "Nhiều sữa ít cà phê",
+    "price": 32000,
+    "cost_price": 14000,
+    "category_id": 1,
+    "is_active": true,
+    "unit_id": 1,
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+  },
+  {
+    "name": "Trà đào cam sả",
+    "sku": "TDCS",
+    "description": "Trà đào thơm mát kết hợp cam và sả",
+    "price": 45000,
+    "cost_price": 18000,
+    "category_id": 2,
+    "is_active": true,
+    "unit_id": 1,
+    "image": "https://images.unsplash.com/photo-1544145945-f904253d0c71"
+  },
+  {
+    "name": "Bánh Croissant",
+    "sku": "CRSN",
+    "description": "Bánh sừng bò bơ Pháp",
+    "price": 35000,
+    "cost_price": 15000,
+    "category_id": 3,
+    "is_active": true,
+    "unit_id": 2,
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a"
+  }
+]

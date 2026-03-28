@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Cà phê", "is_active": true },
+  { "id": 2, "name": "Trà", "is_active": true },
+  { "id": 3, "name": "Bánh ngọt", "is_active": true },
+  { "id": 4, "name": "Đồ ăn nhẹ", "is_active": true }
+]
