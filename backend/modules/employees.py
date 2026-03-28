@@ -17,7 +17,7 @@ class Department(TRCFBaseModule):
     _menu_label = "Phòng ban"
     _menu_icon = ""
     _menu_parent = "STAFF"
-    _menu_sequence = 2
+    _menu_sequence = 6
 
     # Fields
     name        = fields.CharField(label="Tên phòng ban", required=True, unique=True)
@@ -37,7 +37,7 @@ class Employee(TRCFBaseModule):
     _menu_label = "Nhân viên"
     _menu_icon = ""
     _menu_parent = "STAFF"
-    _menu_sequence = 3
+    _menu_sequence = 7
 
     # Basic info
     code        = fields.CharField(label="Mã NV", max_length=20, unique=True)

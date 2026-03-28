@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "code": "NV001",
+    "full_name": "Nguyễn Văn A",
+    "phone": "0901234567",
+    "email": "vana@example.com",
+    "address": "123 Đường ABC, Quận 1",
+    "gender": "male",
+    "id_number": "123456789",
+    "department": 1,
+    "position": "Bếp trưởng",
+    "base_salary": 15000000.0,
+    "bank_account": "1234567890",
+    "bank_name": "Vietcombank",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "code": "NV002",
+    "full_name": "Lê Thị B",
+    "phone": "0902345678",
+    "email": "thib@example.com",
+    "address": "456 Đường XYZ, Quận 3",
+    "gender": "female",
+    "id_number": "987654321",
+    "department": 2,
+    "position": "Pha chế viên",
+    "base_salary": 8000000.0,
+    "bank_account": "0987654321",
+    "bank_name": "ACB",
+    "is_active": true
+  }
+]

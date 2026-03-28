@@ -15,9 +15,9 @@ class Zone(TRCFBaseModule):
     _list_columns = ["code", "name", "zone_type", "floor_number", "sales_point_id", "is_active", "sequence"]
 
     _menu_label = "Khu vực"
-    _menu_icon = "🏢"
-    _menu_parent = "pos"
-    _menu_sequence = 15
+    _menu_icon = ""
+    _menu_parent = "SALE"
+    _menu_sequence = 13
 
     code            = fields.CharField(label="Mã khu vực", max_length=20, unique=True)
     name            = fields.CharField(label="Tên khu vực", required=True)
@@ -45,9 +45,9 @@ class DiningTable(TRCFBaseModule):
     _list_columns = ["code", "name", "zone_id", "seats", "table_status", "is_active"]
 
     _menu_label = "Bàn"
-    _menu_icon = "🪑"
-    _menu_parent = "pos"
-    _menu_sequence = 16
+    _menu_icon = ""
+    _menu_parent = "SALE"
+    _menu_sequence = 14
 
     code            = fields.CharField(label="Mã bàn", max_length=20, unique=True)
     name            = fields.CharField(label="Số bàn / Tên bàn", required=True)

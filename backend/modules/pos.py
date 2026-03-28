@@ -8,16 +8,16 @@ from base.module import TRCFBaseModule
 
 class SalesPoint(TRCFBaseModule):
     _name = "sales-points"
-    _description = "Điểm bán hàng"
+    _description = "POS"
     _search_fields = ["name", "code", "address"]
     _filter_fields = ["is_active"]
     _sort_by = "name"
     _list_columns = ["code", "name", "address", "phone", "is_active"]
 
-    _menu_label = "Điểm bán"
+    _menu_label = "POS"
     _menu_icon = ""
-    _menu_parent = "pos"
-    _menu_sequence = 10
+    _menu_parent = "SALE"
+    _menu_sequence = 12
 
     code        = fields.CharField(label="Mã cửa hàng", max_length=20, unique=True)
     name        = fields.CharField(label="Tên điểm bán", required=True)
@@ -46,9 +46,9 @@ class Order(TRCFBaseModule):
     _archive = True
 
     _menu_label = "Đơn hàng"
-    _menu_icon = "🧾"
-    _menu_parent = "pos"
-    _menu_sequence = 20
+    _menu_icon = ""
+    _menu_parent = "SALE"
+    _menu_sequence = 17
 
     order_number        = fields.CharField(label="Số đơn hàng", max_length=50, unique=True)
     customer_name       = fields.CharField(label="Tên khách hàng")
@@ -91,9 +91,9 @@ class OrderItem(TRCFBaseModule):
     _list_columns = ["order_id", "product_id", "quantity", "unit_price", "discount", "line_total"]
 
     _menu_label = "Chi tiết đơn"
-    _menu_icon = "📋"
-    _menu_parent = "pos"
-    _menu_sequence = 30
+    _menu_icon = ""
+    _menu_parent = "SALE"
+    _menu_sequence = 18
 
     order_id        = fields.ForeignKeyField(label="Đơn hàng", to="orders", required=True)
     product_id      = fields.ForeignKeyField(label="Sản phẩm", to="products", required=True)

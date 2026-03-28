@@ -14,8 +14,8 @@ class Tax(TRCFBaseModule):
     # Menu
     _menu_label = "Thuế"
     _menu_icon = ""
-    _menu_parent = "INVOICE"
-    _menu_sequence = 10
+    _menu_parent = "SALE"
+    _menu_sequence = 15
 
     # Fields
     name = fields.CharField(label="Tên thuế", required=True, unique=True)

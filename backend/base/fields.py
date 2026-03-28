@@ -249,6 +249,23 @@ class DateField(BaseField):
         return Date()
 
 
+@dataclass
+class TimeField(BaseField):
+    @property
+    def schema_type(self) -> str:
+        return "time"
+
+    @property
+    def python_type(self) -> type:
+        from datetime import time
+        return time
+
+    @property
+    def sa_type(self) -> Any:
+        from sqlalchemy import Time
+        return Time()
+
+
 # ─── JSON Field ──────────────────────────────────────────────────────────────
 
 
@@ -463,6 +480,7 @@ FIELD_TYPES: dict[str, type[BaseField]] = {
     "BooleanField": BooleanField,
     "DateTimeField": DateTimeField,
     "DateField": DateField,
+    "TimeField": TimeField,
     "JSONField": JSONField,
     "ForeignKeyField": ForeignKeyField,
     "ManyToManyField": ManyToManyField,

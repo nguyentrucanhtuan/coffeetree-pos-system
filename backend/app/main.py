@@ -143,9 +143,10 @@ app.include_router(system_router)
 # TRCFBaseModule business modules — explicit registration
 from modules.products import Product, Category, Unit
 from modules.employees import Employee, Department
+from modules.work_shift import WorkShift, TaskTemplate, WorkShiftRegister
+from modules.attendant import Attendant
 
 # HR
-from modules.employees import Employee
 # from modules.attendance import Attendance
 
 # CRM
@@ -167,7 +168,10 @@ app.include_router(Unit.router())
 app.include_router(Tax.router())
 app.include_router(Employee.router())
 app.include_router(Department.router())
-# app.include_router(Attendance.router())
+app.include_router(WorkShift.router())
+app.include_router(TaskTemplate.router())
+app.include_router(WorkShiftRegister.router())
+app.include_router(Attendant.router())
 app.include_router(Customer.router())
 app.include_router(Warehouse.router())
 app.include_router(StockMovement.router())
@@ -184,7 +188,7 @@ app.include_router(Tax.router())
 # Module registry for /modules/menu endpoint
 REGISTERED_MODULES: list[type] = [
     Unit, Category, Product,
-    Employee, Department,
+    Employee, Department, WorkShift, TaskTemplate, WorkShiftRegister, Attendant,
     Customer,
     Warehouse, StockMovement, BoM, BoMLine,
     SalesPoint, Order, OrderItem, PaymentMethod, Zone, DiningTable,

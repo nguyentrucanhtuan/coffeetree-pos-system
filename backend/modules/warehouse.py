@@ -66,7 +66,7 @@ class StockMovement(TRCFBaseModule):
     _menu_label = "Nhập/Xuất kho"
     _menu_icon = ""
     _menu_parent = "REPORT"
-    _menu_sequence = 6
+    _menu_sequence = 30
 
     reference       = fields.CharField(label="Số phiếu", max_length=50)
     movement_type   = fields.SelectionField(

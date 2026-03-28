@@ -15,9 +15,9 @@ class Customer(TRCFBaseModule):
 
     # Menu
     _menu_label = "Khách hàng"
-    _menu_icon = "🧑‍🤝‍🧑"
-    _menu_parent = "crm"
-    _menu_sequence = 10
+    _menu_icon = ""
+    _menu_parent = "SALE"
+    _menu_sequence = 17
 
     # Basic info
     code            = fields.CharField(label="Mã KH", max_length=20, unique=True)

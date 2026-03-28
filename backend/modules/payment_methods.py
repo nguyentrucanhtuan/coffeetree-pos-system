@@ -14,10 +14,10 @@ class PaymentMethod(TRCFBaseModule):
     _archive = False
 
     # Menu
-    _menu_label = "Phương thức TT"
-    _menu_icon = "💳"
-    _menu_parent = "pos"
-    _menu_sequence = 5
+    _menu_label = "Phương thức thanh toán"
+    _menu_icon = ""
+    _menu_parent = "SALE"
+    _menu_sequence = 16
 
     # Core
     code        = fields.CharField(label="Mã", max_length=30, unique=True)

@@ -1,0 +1,5 @@
+[
+  {"id": 1, "name": "Bếp", "is_active": true, "notes": "Khu vực chế biến chính"},
+  {"id": 2, "name": "Pha chế", "is_active": true, "notes": "Khu vực quầy bar"},
+  {"id": 3, "name": "Phục vụ", "is_active": true, "notes": "Đội ngũ phục vụ bàn"}
+]
